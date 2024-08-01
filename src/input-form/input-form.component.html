@@ -1,0 +1,23 @@
+<div class="container d-flex flex-column w-50 mt-5 gap-3">
+  <div class="mb-3 text-center">
+    <label
+      for="exampleFormControlInput1"
+      class="form-label text-light fs-3 fw-normal"
+      >New Task</label
+    >
+    <input
+      type="text"
+      class="form-control py-3 px-4"
+      id="exampleFormControlInput1"
+      placeholder="Enter Something to do"
+      (input)="updateInput($event)"
+      [value]="todoInp"
+    />
+  </div>
+  <button
+    class="btn btn-warning px-5 py-2 w-25 align-self-end"
+    (click)="sendMessage()"
+  >
+    Add
+  </button>
+</div>
